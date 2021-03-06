@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-size: 55px;
+  color: $white-light;
+}
+h3 {
+  color: $white-light;
+}
+.transparency {
+  &:hover {
+    transition: 0.2s;
+    background-color: $gris-claro;
+  }
+}
+.calc {
+  background-color: $gris-claro;
+  border: inset 6px $turquesa;
+  max-width: 16vw;
+}
+.resultado {
+  margin-top: 10px;
+  color: $white;
+  text-align: end;
+  height: 60px;
+  width: auto;
+}
+.container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.children {
+  background-color: $negro;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  height: 50px;
+  width: 80px;
+  margin: 0 1px 1px 1px;
+  @extend .border;
+  @extend .transparency;
+}
+.childrenClaro {
+  @extend .children;
+  color: $white-light;
+  background-color: $gris-oscuro;
+}
+.childrenEqual {
+  @extend .children;
+  color: $white-light;
+  background-color: $turquesa;
+  &:hover {
+    background-color: $turquesa-fuerte;
+  }
+}
+.border {
+  border: groove 1px $gris-claro;
+}
