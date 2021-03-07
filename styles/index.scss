@@ -21,12 +21,12 @@ h3 {
     background-color: $gris-claro;
   }
 }
-.calc {
+#calc {
   background-color: $gris-claro;
   border: inset 6px $turquesa;
-  max-width: 16vw;
+  max-width: 25vw;
 }
-.resultado {
+#resultado {
   margin-top: 10px;
   color: $white;
   text-align: end;

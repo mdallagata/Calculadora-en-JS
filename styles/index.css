@@ -23,13 +23,13 @@ h3 {
   background-color: #1f1f1f;
 }
 
-.calc {
+#calc {
   background-color: #1f1f1f;
   border: inset 6px #3d807c;
-  max-width: 16vw;
+  max-width: 25vw;
 }
 
-.resultado {
+#resultado {
   margin-top: 10px;
   color: white;
   text-align: end;

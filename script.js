@@ -1,7 +1,47 @@
-var num1 = window.prompt("Ingrese el primer número");
-var num2 = window.prompt("Ingrese el segundo número");
+var numero1 = undefined;
+var numero2 = undefined;
+var operacion;
+var resultado = document.getElementById("resultado");
 
-num1 = parseInt(num1);
-num2 = parseInt(num2);
+function clickNumero(numero) {
+  if (
+    resultado.innerHTML === 0 ||
+    resultado.innerHTML === "+" ||
+    resultado.innerHTML === "-" ||
+    resultado.innerHTML === "*" ||
+    resultado.innerHTML === "/"
+  ) {
+    resultado.innerHTML = numero;
+  } else {
+    resultado.innerHTML += numero;
+  }
+}
 
-document.write(num1 + num2);
+function operacion(sender) {
+  numero1 = resultado.innerHTML;
+  operacion = sender;
+  resultado.innerHTML = operacion;
+}
+
+function calcularResultado() {
+  numero2 = resultado.innerHTML;
+  alert(numero1);
+  alert(numero2);
+  switch (operacion) {
+    case "+": {
+      break;
+    }
+    case "-": {
+      resultado.innerHTML = numero1 - numero2;
+      break;
+    }
+    case "/": {
+      resultado.innerHTML = numero1 / numero2;
+      break;
+    }
+    case "*": {
+      resultado.innerHTML = numero1 * numero2;
+      break;
+    }
+  }
+}

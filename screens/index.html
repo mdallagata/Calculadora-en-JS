@@ -8,25 +8,28 @@
     <title>Calculadora</title>
   </head>
   <body>
-    <div class="calc">
+    <div id="calc">
       <h3>Calculadora</h3>
-      <div class="resultado"><h1>0</h1></div>
+      <div id="resultado"><h1>0</h1></div>
       <div class="container">
-        <div class="children">7</div>
-        <div class="children">8</div>
-        <div class="children">9</div>
-        <div class="childrenClaro">X</div>
-        <div class="children">4</div>
-        <div class="children">5</div>
-        <div class="children">6</div>
-        <div class="childrenClaro">-</div>
-        <div class="children">1</div>
-        <div class="children">2</div>
-        <div class="children">3</div>
-        <div class="childrenClaro">+</div>
-        <div class="children">0</div>
-        <div class="childrenEqual">= asdasd</div>
+        <div class="children" onclick="clickNumero(7)">7</div>
+        <div class="children" onclick="clickNumero(8)">8</div>
+        <div class="children" onclick="clickNumero(9)">9</div>
+        <div class="childrenClaro" onclick="operacion('*')">X</div>
+        <div class="children" onclick="clickNumero(4)">4</div>
+        <div class="children" onclick="clickNumero(5)">5</div>
+        <div class="children" onclick="clickNumero(6)">6</div>
+        <div class="childrenClaro" onclick="operacion('-')">-</div>
+        <div class="children" onclick="clickNumero(1)">1</div>
+        <div class="children" onclick="clickNumero(2)">2</div>
+        <div class="children" onclick="clickNumero(3)">3</div>
+        <div class="childrenClaro" onclick="operacion('+')">+</div>
+        <div class="childrenClaro" onclick="limpiar()">C</div>
+        <div class="children" onclick="clickNumero(0)">0</div>
+        <div class="childrenClaro" onclick="limpiar()"></div>
+        <div class="childrenEqual" onclick="calcularResultado()">=</div>
       </div>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
