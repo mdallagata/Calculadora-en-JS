@@ -1,46 +1,41 @@
 var numero1 = undefined;
 var numero2 = undefined;
 var operacion;
-var resultado = document.getElementById("resultado");
+var caja = document.getElementById("resultado");
 
 function clickNumero(numero) {
-  if (
-    resultado.innerHTML === 0 ||
-    resultado.innerHTML === "+" ||
-    resultado.innerHTML === "-" ||
-    resultado.innerHTML === "*" ||
-    resultado.innerHTML === "/"
-  ) {
-    resultado.innerHTML = numero;
-  } else {
-    resultado.innerHTML += numero;
-  }
+  caja.innerHTML = numero;
 }
 
 function operacion(sender) {
-  numero1 = resultado.innerHTML;
+  numero1 = caja.innerHTML;
   operacion = sender;
-  resultado.innerHTML = operacion;
+  caja.innerHTML = operacion;
+}
+function limpiar() {
+  caja.innerHTML = 0;
+  numero1 = undefined;
+  operacion = undefined;
+  numero2 = undefined;
 }
 
 function calcularResultado() {
-  numero2 = resultado.innerHTML;
-  alert(numero1);
-  alert(numero2);
+  numero2 = caja.innerHTML;
   switch (operacion) {
     case "+": {
+      caja.innerHTML = parseInt(numero1) + parseInt(numero2);
       break;
     }
     case "-": {
-      resultado.innerHTML = numero1 - numero2;
+      caja.innerHTML = parseInt(numero1) - parseInt(numero2);
       break;
     }
     case "/": {
-      resultado.innerHTML = numero1 / numero2;
+      caja.innerHTML = parseInt(numero1) / parseInt(numero2);
       break;
     }
     case "*": {
-      resultado.innerHTML = numero1 * numero2;
+      caja.innerHTML = parseInt(numero1) * parseInt(numero2);
       break;
     }
   }
