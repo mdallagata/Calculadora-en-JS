@@ -1,6 +1,6 @@
 var numero1 = undefined;
 var numero2 = undefined;
-var operacion;
+var operacion = undefined;
 var caja = document.getElementById("resultado");
 
 function clickNumero(numero) {
