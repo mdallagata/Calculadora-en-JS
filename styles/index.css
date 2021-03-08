@@ -17,7 +17,7 @@ h3 {
   color: #ededed;
 }
 
-.transparency:hover, .children:hover, .childrenClaro:hover, .childrenEqual:hover {
+.transparency:hover, .children:hover, .childrenClaro:hover, #childrenEqual:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: #1f1f1f;
@@ -46,7 +46,7 @@ h3 {
       flex-wrap: wrap;
 }
 
-.children, .childrenClaro, .childrenEqual {
+.children, .childrenClaro, #childrenEqual {
   background-color: #060606;
   font-size: 40px;
   text-align: center;
@@ -61,16 +61,16 @@ h3 {
   background-color: #131313;
 }
 
-.childrenEqual {
+#childrenEqual {
   color: #ededed;
   background-color: #3d807c;
 }
 
-.childrenEqual:hover {
+#childrenEqual:hover {
   background-color: #27baaa;
 }
 
-.border, .children, .childrenClaro, .childrenEqual {
+.border, .children, .childrenClaro, #childrenEqual {
   border: groove 1px #1f1f1f;
 }
 /*# sourceMappingURL=index.css.map */
