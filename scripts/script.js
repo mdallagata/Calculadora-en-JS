@@ -57,7 +57,7 @@ function clickNumero(numero) {
 }
 
 function asignarOperacion(sender) {
-  numero1 = caja.innerHTML;
+  numero1 = parseInt(caja.innerHTML);
   caja.innerHTML = "";
   operacion = sender;
   //caja.innerHTML = operacion;
@@ -74,19 +74,19 @@ function calcularResultado() {
   console.log(numero1, numero2);
   switch (operacion) {
     case "+": {
-      caja.innerHTML = parseInt(numero1) + numero2;
+      caja.innerHTML = numero1 + numero2;
       break;
     }
     case "-": {
-      caja.innerHTML = parseInt(numero1) - numero2;
+      caja.innerHTML = numero1 - numero2;
       break;
     }
     case "/": {
-      caja.innerHTML = parseInt(numero1) / numero2;
+      caja.innerHTML = numero1 / numero2;
       break;
     }
     case "*": {
-      caja.innerHTML = parseInt(numero1) * numero2;
+      caja.innerHTML = numero1 * numero2;
       break;
     }
     default: {
