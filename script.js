@@ -1,5 +1,5 @@
-var numero1 = undefined;
-var numero2 = undefined;
+let numero1;
+let numero2;
 var operacion;
 var caja = document.getElementById("resultado");
 
@@ -17,9 +17,6 @@ function operacion(sender) {
 }
 function limpiar() {
   caja.innerHTML = 0;
-  numero1 = undefined;
-  operacion = undefined;
-  numero2 = undefined;
 }
 
 function calcularResultado() {
@@ -42,4 +39,6 @@ function calcularResultado() {
       break;
     }
   }
+  alert(numero1);
+  alert(numero2);
 }
