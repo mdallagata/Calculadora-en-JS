@@ -49,6 +49,9 @@ const PERCENT = document
 const SQUARE = document
   .getElementById("x²")
   .addEventListener("click", () => asignarOperacion("x²"));
+const ROOT = document
+  .getElementById("²√")
+  .addEventListener("click", () => asignarOperacion("²√"));
 
 const C = document
   .getElementById("c")
@@ -82,9 +85,9 @@ function limpiar() {
 }
 
 function calcularResultado() {
-  if (operador != "x²") {
-    numero2 = parseFloat(caja.innerHTML);
-  }
+  //if (operador != "x²" || operador != "²√") {
+  //  numero2 = parseFloat(caja.innerHTML);
+  //}
   console.log(numero1, numero2, operador);
   switch (operador) {
     case "+": {
@@ -109,6 +112,10 @@ function calcularResultado() {
     }
     case "x²": {
       caja.innerHTML = numero1 * numero1;
+      break;
+    }
+    case "²√": {
+      caja.innerHTML = Math.sqrt(numero1);
       break;
     }
 
