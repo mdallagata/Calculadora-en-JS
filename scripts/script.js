@@ -98,7 +98,7 @@ function calcularResultado() {
       break;
     }
     case "%": {
-      caja.innerHTML = (100 * numero2) / numero1;
+      caja.innerHTML = (numero2 / 100) * numero1;
       break;
     }
 
