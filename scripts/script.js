@@ -88,7 +88,6 @@ function calcularResultado() {
   //if (operador != "x²" || operador != "²√") {
   //  numero2 = parseFloat(caja.innerHTML);
   //}
-  console.log(numero1, numero2, operador);
   switch (operador) {
     case "+": {
       caja.innerHTML = numero1 + numero2;
