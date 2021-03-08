@@ -41,6 +41,9 @@ h4 {
   flex-wrap: wrap;
 }
 .children {
+  &:hover {
+    cursor: pointer;
+  }
   background-color: $negro;
   font-size: 40px;
   text-align: center;
