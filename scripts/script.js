@@ -43,6 +43,9 @@ const MULT = document
 const DIVIDE = document
   .getElementById("/")
   .addEventListener("click", () => asignarOperacion("/"));
+const PERCENT = document
+  .getElementById("%")
+  .addEventListener("click", () => asignarOperacion("%"));
 const C = document
   .getElementById("c")
   .addEventListener("click", () => limpiar());
@@ -52,7 +55,7 @@ const RESULT = document
 
 let numero1;
 let numero2;
-let operacion;
+let operador;
 let caja = document.getElementById("resultado");
 
 function clickBtn(valor) {
@@ -65,20 +68,19 @@ function clickBtn(valor) {
 function asignarOperacion(sender) {
   numero1 = parseFloat(caja.innerHTML);
   caja.innerHTML = "";
-  operacion = sender;
-  //caja.innerHTML = operacion;
+  operador = sender;
 }
 function limpiar() {
   caja.innerHTML = 0;
   numero1 = 0;
   numero2 = 0;
-  operacion = undefined;
+  operador = undefined;
 }
 
 function calcularResultado() {
   numero2 = parseFloat(caja.innerHTML);
-  console.log(numero1, numero2);
-  switch (operacion) {
+  console.log(numero1, numero2, operador);
+  switch (operador) {
     case "+": {
       caja.innerHTML = numero1 + numero2;
       break;
@@ -95,9 +97,13 @@ function calcularResultado() {
       caja.innerHTML = numero1 / numero2;
       break;
     }
+    case "%": {
+      caja.innerHTML = (100 * numero2) / numero1;
+      break;
+    }
 
     default: {
-      alert("xd");
+      alert("Error, ingrese dos valores y un operador.");
     }
   }
 }
