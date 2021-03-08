@@ -85,9 +85,7 @@ function limpiar() {
 }
 
 function calcularResultado() {
-  //if (operador != "x²" || operador != "²√") {
-  //  numero2 = parseFloat(caja.innerHTML);
-  //}
+  numero2 = parseFloat(caja.innerHTML);
   switch (operador) {
     case "+": {
       caja.innerHTML = numero1 + numero2;
