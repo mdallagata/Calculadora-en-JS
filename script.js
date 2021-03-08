@@ -1,10 +1,13 @@
 var numero1 = undefined;
 var numero2 = undefined;
-var operacion = undefined;
+var operacion;
 var caja = document.getElementById("resultado");
 
 function clickNumero(numero) {
-  caja.innerHTML = numero;
+  if (caja.innerHTML == 0) {
+    caja.innerHTML = "";
+  }
+  caja.innerHTML += numero;
 }
 
 function operacion(sender) {
