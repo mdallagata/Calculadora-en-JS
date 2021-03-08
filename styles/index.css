@@ -13,19 +13,20 @@ h1 {
   color: #ededed;
 }
 
-h3 {
+h4 {
   color: #ededed;
 }
 
-.transparency:hover, .children:hover, .childrenClaro:hover, .childrenEqual:hover {
+.transparency:hover, .children:hover, .childrenClaro:hover, .childrenInvisible:hover, .childrenEqual:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: #1f1f1f;
 }
 
 .calc {
+  margin: 100px auto 0 auto;
   background-color: #1f1f1f;
-  border: inset 6px #3d807c;
+  border: outset 6px #3d807c;
   max-width: 16vw;
 }
 
@@ -46,7 +47,7 @@ h3 {
       flex-wrap: wrap;
 }
 
-.children, .childrenClaro, .childrenEqual {
+.children, .childrenClaro, .childrenInvisible, .childrenEqual {
   background-color: #060606;
   font-size: 40px;
   text-align: center;
@@ -56,9 +57,18 @@ h3 {
   margin: 0 1px 1px 1px;
 }
 
+.children:hover, .childrenClaro:hover, .childrenInvisible:hover, .childrenEqual:hover {
+  cursor: pointer;
+}
+
 .childrenClaro {
   color: #ededed;
   background-color: #131313;
+}
+
+.childrenInvisible {
+  background-color: #1f1f1f;
+  border: 0;
 }
 
 .childrenEqual {
@@ -70,7 +80,7 @@ h3 {
   background-color: #27baaa;
 }
 
-.border, .children, .childrenClaro, .childrenEqual {
+.borderChildren, .children, .childrenClaro, .childrenInvisible, .childrenEqual {
   border: groove 1px #1f1f1f;
 }
 /*# sourceMappingURL=index.css.map */
