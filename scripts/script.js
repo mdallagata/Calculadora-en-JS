@@ -74,7 +74,7 @@ function clickBtn(valor) {
 
 function asignarOperacion(sender) {
   numero1 = parseFloat(caja.innerHTML);
-  caja.innerHTML = "";
+  caja.innerHTML = sender;
   operador = sender;
 }
 function limpiar() {
@@ -85,34 +85,38 @@ function limpiar() {
 }
 
 function calcularResultado() {
-  numero2 = parseFloat(caja.innerHTML);
+  numero2 = parseFloat(caja.innerHTML.substring(1));
+  if (operador != undefined) {
+    caja.innerHTML = numero1 + caja.innerHTML + "=";
+  }
+
   switch (operador) {
     case "+": {
-      caja.innerHTML = numero1 + numero2;
+      caja.innerHTML += numero1 + numero2;
       break;
     }
     case "-": {
-      caja.innerHTML = numero1 - numero2;
+      caja.innerHTML += numero1 - numero2;
       break;
     }
     case "*": {
-      caja.innerHTML = numero1 * numero2;
+      caja.innerHTML += numero1 * numero2;
       break;
     }
     case "/": {
-      caja.innerHTML = numero1 / numero2;
+      caja.innerHTML += numero1 / numero2;
       break;
     }
     case "%": {
-      caja.innerHTML = (numero2 / 100) * numero1;
+      caja.innerHTML += (numero2 / 100) * numero1;
       break;
     }
     case "x²": {
-      caja.innerHTML = numero1 * numero1;
+      caja.innerHTML += numero1 * numero1;
       break;
     }
     case "²√": {
-      caja.innerHTML = Math.sqrt(numero1);
+      caja.innerHTML += Math.sqrt(numero1);
       break;
     }
 
