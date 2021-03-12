@@ -60,63 +60,63 @@ const RESULT = document
   .getElementById("result")
   .addEventListener("click", () => calcularResultado());
 
-let _numero1;
-let _numero2;
-let _operador;
-let _caja = document.getElementById("resultado");
+let numero1;
+let numero2;
+let operador;
+let caja = document.getElementById("resultado");
 
 function clickBtn(valor) {
-  if (_caja.innerHTML === "0") {
-    _caja.innerHTML = "";
+  if (caja.innerHTML === "0") {
+    caja.innerHTML = "";
   }
-  _caja.innerHTML += valor;
+  caja.innerHTML += valor;
 }
 
 function asignarOperacion(sender) {
-  _numero1 = parseFloat(_caja.innerHTML);
-  _caja.innerHTML = sender;
-  _operador = sender;
+  numero1 = parseFloat(caja.innerHTML);
+  caja.innerHTML = sender;
+  operador = sender;
 }
 function limpiar() {
-  _caja.innerHTML = 0;
-  _numero1 = 0;
-  _numero2 = 0;
-  _operador = undefined;
+  caja.innerHTML = 0;
+  numero1 = 0;
+  numero2 = 0;
+  operador = undefined;
 }
 
 function calcularResultado() {
-  _numero2 = parseFloat(_caja.innerHTML.substring(1));
-  if (_operador != undefined) {
-    _caja.innerHTML = _numero1 + _caja.innerHTML + "=";
+  numero2 = parseFloat(caja.innerHTML.substring(1));
+  if (operador != undefined) {
+    caja.innerHTML = numero1 + caja.innerHTML + "=";
   }
 
-  switch (_operador) {
+  switch (operador) {
     case "+": {
-      _caja.innerHTML += _numero1 + _numero2;
+      caja.innerHTML += numero1 + numero2;
       break;
     }
     case "-": {
-      _caja.innerHTML += _numero1 - _numero2;
+      caja.innerHTML += numero1 - numero2;
       break;
     }
     case "*": {
-      _caja.innerHTML += _numero1 * _numero2;
+      caja.innerHTML += numero1 * numero2;
       break;
     }
     case "/": {
-      _caja.innerHTML += _numero1 / _numero2;
+      caja.innerHTML += numero1 / numero2;
       break;
     }
     case "%": {
-      _caja.innerHTML += (_numero2 / 100) * _numero1;
+      caja.innerHTML += (numero2 / 100) * numero1;
       break;
     }
     case "x²": {
-      _caja.innerHTML += _numero1 * _numero1;
+      caja.innerHTML += numero1 * numero1;
       break;
     }
     case "²√": {
-      _caja.innerHTML += Math.sqrt(_numero1);
+      caja.innerHTML += Math.sqrt(numero1);
       break;
     }
 
