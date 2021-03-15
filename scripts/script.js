@@ -52,7 +52,6 @@ const SQUARE = document
 const ROOT = document
   .getElementById("²√")
   .addEventListener("click", () => asignarOperacion("²√"));
-
 const C = document
   .getElementById("c")
   .addEventListener("click", () => limpiar());
