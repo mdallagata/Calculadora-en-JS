@@ -8,6 +8,11 @@
   font-weight: 300;
 }
 
+body {
+  background: #060606;
+  background: radial-gradient(ellipse at center, #060606 0%, #3d807c 33%, #ffffff 100%);
+}
+
 h1 {
   font-size: 55px;
   color: #ededed;
