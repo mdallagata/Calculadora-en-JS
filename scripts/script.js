@@ -85,7 +85,7 @@ function limpiar() {
 
 function calcularResultado() {
   numero2 = parseFloat(caja.innerHTML.substring(1));
-  if (operador != undefined) {
+  if (operador != undefined && caja.innerHTML != 0) {
     caja.innerHTML = numero1 + caja.innerHTML + "=";
   }
 
