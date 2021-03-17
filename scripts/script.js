@@ -59,9 +59,9 @@ const CALCULATE = document
   .getElementById("calculate")
   .addEventListener("click", () => calcularResultado());
 
-let numero1;
-let numero2;
-let operador;
+let numero1 = 0;
+let numero2 = 0;
+let operador = "";
 let caja = document.getElementById("resultado");
 
 function clickBtn(valor) {
