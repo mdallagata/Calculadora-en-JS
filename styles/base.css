@@ -113,25 +113,13 @@ h4 {
   }
 }
 
-@media (min-width: 1650px) {
-  .calc {
-    max-width: 18vw;
-  }
-}
-
-@media (min-width: 1650px) {
+@media (min-width: 1631px) {
   .calc {
     max-width: 21vw;
   }
 }
 
-@media (min-width: 1650px) {
-  .calc {
-    max-width: 21vw;
-  }
-}
-
-@media (min-width: 1750px) {
+@media (min-width: 1700px) {
   .calc {
     max-width: 20vw;
   }
