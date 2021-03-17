@@ -97,3 +97,22 @@ h4 {
 .borderChildren {
   border: groove 1px $gris-claro;
 }
+
+@media (min-width: 1200px) {
+  .calc {
+    //background-color: green;
+    max-width: 29vw;
+  }
+}
+@media (min-width: 1300px) {
+  .calc {
+    //  background-color: red;
+    max-width: 23vw;
+  }
+}
+@media (min-width: 1544px) {
+  .calc {
+    // background-color: blue;
+    max-width: 22vw;
+  }
+}

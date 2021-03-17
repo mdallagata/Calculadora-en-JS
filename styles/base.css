@@ -88,4 +88,22 @@ h4 {
 .borderChildren, .children, .childrenClaro, .childrenInvisible, .childrenEqual {
   border: groove 1px #1f1f1f;
 }
+
+@media (min-width: 1200px) {
+  .calc {
+    max-width: 29vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .calc {
+    max-width: 23vw;
+  }
+}
+
+@media (min-width: 1544px) {
+  .calc {
+    max-width: 22vw;
+  }
+}
 /*# sourceMappingURL=base.css.map */
