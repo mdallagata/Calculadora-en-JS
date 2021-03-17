@@ -91,11 +91,17 @@ h4 {
 
 @media (min-width: 1200px) {
   .calc {
-    max-width: 29vw;
+    max-width: 25vw;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1415px) {
+  .calc {
+    max-width: 24vw;
+  }
+}
+
+@media (min-width: 1480px) {
   .calc {
     max-width: 23vw;
   }
@@ -104,6 +110,12 @@ h4 {
 @media (min-width: 1544px) {
   .calc {
     max-width: 22vw;
+  }
+}
+
+@media (min-width: 1650px) {
+  .calc {
+    max-width: 18vw;
   }
 }
 /*# sourceMappingURL=base.css.map */

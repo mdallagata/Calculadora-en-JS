@@ -100,19 +100,31 @@ h4 {
 
 @media (min-width: 1200px) {
   .calc {
-    //background-color: green;
-    max-width: 29vw;
+    //background-color: saddlebrown;
+    max-width: 25vw;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1415px) {
   .calc {
-    //  background-color: red;
+    // background-color: green;
+    max-width: 24vw;
+  }
+}
+@media (min-width: 1480px) {
+  .calc {
+    // background-color: red;
     max-width: 23vw;
   }
 }
 @media (min-width: 1544px) {
   .calc {
-    // background-color: blue;
+    //background-color: blue;
     max-width: 22vw;
+  }
+}
+@media (min-width: 1650px) {
+  .calc {
+    //background-color: yellow;
+    max-width: 18vw;
   }
 }
