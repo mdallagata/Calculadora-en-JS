@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import "mediaQueries";
+//@import "mediaQueries";
 @import "variables";
 
 * {
@@ -13,21 +13,21 @@ body {
   background: #060606;
   background: -moz-radial-gradient(
     center,
-    #060606 0%,
-    #3d807c 33%,
-    #ffffff 100%
+    $negro 0%,
+    $amarillo 33%,
+    $blanco 100%
   );
   background: -webkit-radial-gradient(
     center,
-    #060606 0%,
-    #3d807c 33%,
-    #ffffff 100%
+    $negro 0%,
+    $amarillo 33%,
+    $blanco 100%
   );
   background: radial-gradient(
     ellipse at center,
-    #060606 0%,
-    #3d807c 33%,
-    #ffffff 100%
+    $negro 0%,
+    $amarillo 33%,
+    $blanco 100%
   );
 }
 h1 {
@@ -47,7 +47,7 @@ h4 {
 .calc {
   margin: 100px auto 0 auto;
   background-color: $gris-claro;
-  border: outset 6px $turquesa;
+  border: outset 6px $amarillo;
   max-width: 18vw;
 }
 .resultado {
@@ -89,9 +89,9 @@ h4 {
 .childrenEqual {
   @extend .children;
   color: $blanco-light;
-  background-color: $turquesa;
+  background-color: $amarillo;
   &:hover {
-    background-color: $turquesa-fuerte;
+    background-color: $amarillo-fuerte;
   }
 }
 .borderChildren {
