@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-//@import "mediaQueries";
+//@import "_mediaQueries";
 @import "variables";
 
 * {
@@ -100,31 +100,31 @@ h4 {
 
 @media (min-width: 1200px) {
   .calc {
-    //background-color: saddlebrown;
+    background-color: saddlebrown;
     max-width: 25vw;
   }
 }
 @media (min-width: 1415px) {
   .calc {
-    // background-color: green;
+    background-color: green;
     max-width: 24vw;
   }
 }
 @media (min-width: 1480px) {
   .calc {
-    // background-color: red;
+    background-color: red;
     max-width: 23vw;
   }
 }
 @media (min-width: 1544px) {
   .calc {
-    //background-color: blue;
+    background-color: blue;
     max-width: 22vw;
   }
 }
 @media (min-width: 1650px) {
   .calc {
-    //background-color: yellow;
+    background-color: yellow;
     max-width: 18vw;
   }
 }
