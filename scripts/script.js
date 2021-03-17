@@ -55,8 +55,8 @@ const ROOT = document
 const C = document
   .getElementById("c")
   .addEventListener("click", () => limpiar());
-const RESULT = document
-  .getElementById("result")
+const CALCULATE = document
+  .getElementById("calculate")
   .addEventListener("click", () => calcularResultado());
 
 let numero1;
