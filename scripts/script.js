@@ -76,6 +76,7 @@ function asignarOperacion(sender) {
   caja.innerHTML = sender;
   operador = sender;
 }
+
 function limpiar() {
   caja.innerHTML = 0;
   numero1 = 0;
