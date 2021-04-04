@@ -98,6 +98,11 @@ h4 {
   border: groove 1px $gris-claro;
 }
 
+@media (min-width: 375px) {
+  .calc {
+    max-width: 91vw;
+  }
+}
 @media (min-width: 800px) {
   .calc {
     max-width: 43vw;
